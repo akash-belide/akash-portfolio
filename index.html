@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Akash Belide</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Akash Belide</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Screenshot 2025-03-30 at 1.44.19 AM-modified.png" alt="Akash Belide profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Akash Belide</h1>
+            <!--<p class="section__text__p2">Software Engineer</p>-->
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_Akash.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>  
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/akash-belide-263b572ab'">
+
+                <img 
+                src="./assets/github.png" 
+                alt="My GitHub profile" 
+                class="icon" 
+                onclick="location.href='https://www.github.com/akash-belide'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-me.jpeg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+
+                <div class="text-container">
+                    <p>
+                       I'm a software Engineer passionate about building scalable, high-performance applications. Currently pursuing my Master’s in Information Systems at NYU, I specialize in backend development, cloud computing, and DevOps, while also being hands-on in full-stack development to create efficient and user-centric software solutions.  
+
+                        Through my educational and professional journey, I’ve gained expertise in Java, Spring Boot, AWS, Docker, CI/CD pipelines, and modern web technologies like React.js and Node.js, enabling seamless deployments and optimized application performance. With a strong foundation in algorithms, databases, and software engineering principles, I build solutions that are both robust and scalable.  
+
+                        Beyond coding, I’m driven by system design, performance optimization, and emerging technologies that foster innovation. I thrive in collaborative environments, working with cross-functional teams to deliver impactful digital experiences.  
+
+                        Let’s connect and create something amazing! 🚀
+                    </p>
+                </div> 
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'"
+        />
+    </section>
+
+    <section id="education">
+        <p class="section__text__p1">My Academic Journey</p>
+        <h1 class="title">Education</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+
+                <div class="text-container">
+                    <h2>Master of Science in Information Systems</h2>
+                    <p>New York University, New York, NY</p>
+                    <p>2023 - Present</p>
+                        <p>Relevant Coursework: Fundamental Algorithms, Advanced Database Systems, DevOps and Agile Methodologies, Data Science for Business, Data Communication & Networks, Data Visualization, Innovation and Design</p>
+                </div> 
+                <br>
+                <div class="text-container">
+                    <h2>Bachelor's Degree in Computer Science</h2>
+                    <p>MGIT, Hyderabad, India</p>
+                    <p>2019 - 2023</p>
+                    <p>
+                    Relevant Coursework: Software Engineering, Operating Systems, Data Science, Web Development, Real Time Systems, Cloud Computing, Java Programming, DSA, Machine Learning, Computer Networks, Social Networks
+                    </p>
+                </div> 
+            </div>
+            <div class="section__pic-container">
+                <img src="./assets/nyu-m-hero.jpg" alt="profile picture" class="about-pic">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"
+        />
+    </section>
+
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full-Stack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Spring Boot</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Express.js</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>RESTful APIs</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C,C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JQuery</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+
+
+                    </div>
+                </div>
+                
+                <div class="details-container">
+                    <h2 class="experience-sub-title">DevOps, CI/CD & Other tools </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Docker</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Kubernetes</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>OpenShift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Jenkins</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>GitLab CI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JUnit</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Selenium</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>PyTest</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Pandas, NumPy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Scikit-Learn</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>TensorFlow</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>GitHub Actions</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/istockphoto-1391517615-612x612.jpg" alt="project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">RideShareMate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akash-belide/RideShareMate'">
+                        Github
+                    </button>
+
+
+                </div>
+               
+
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/istockphoto-1457888228-612x612.jpg" alt="project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">NYU Inventory Service</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akash-belide/inventory'">
+                        Github
+                    </button>
+
+                    
+                </div>
+               
+
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#certifications'"
+        />
+    </section>
+
+    <section id="certifications">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/DS-Java.png" alt="Data structures certification"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Data Structures</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ninjasfiles.s3.amazonaws.com/certificate253137843eca927c6f4b259a6c2c965b01d254d.pdf'">
+                            Verify Credential
+                        </button>
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/BE-FS.png" alt="Back- end certification"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Back End|Full Stack</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ninjasfiles.s3.amazonaws.com/certificate_f3ea4fc857327846_da4d7bc385122a2da225566364f4c81f.pdf'">
+                            Verify Credential
+                        </button>
+
+                        
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/FE-FS.png" alt="
+                        Front End|Full Stack certification"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Front End|Full Stack</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ninjasfiles.s3.amazonaws.com/certificate2531376da29de96a4eec2125d4cb36a660ce9f6.pdf'">
+                            Verify Credential
+                        </button>
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/DataScience.png" alt="Data Science"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Data Science</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://nptel.ac.in/noc/E_Certificate/NPTEL21CS69S2358111803006934'">
+                            Verify Credential
+                        </button>
+
+                        
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Java.png" alt="java certification"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">JAVA</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ninjasfiles.s3.amazonaws.com/certificate253137953e7e394d40966efa24f877fe0eb1b9b.pdf'">
+                            Verify Credential
+                        </button>
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Social Networks.png" alt="project 2"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Social Networks</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://nptel.ac.in/noc/E_Certificate/NPTEL21CS74S2363132703096874'">
+                            Verify Credential
+                        </button>
+
+                        
+                    </div>
+                
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Publication.png" alt="project 2"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Publication</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.ijaem.net/current-issue.php?issueid=57'">
+                            Verify Credential
+                        </button>
+
+                        
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:ab11903@stern.nyu.edu">ab11903@stern.nyu.edu
+                </a></p>
+            </div>
+        
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/akash-belide-263b572ab/">LinkedIn
+                </a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Akash Belide. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
